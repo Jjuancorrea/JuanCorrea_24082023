@@ -13,5 +13,28 @@ namespace App_reto1
         {
 
         }
+
+        protected void btn_registrar_Click(object sender, EventArgs e)
+        {
+            cls_registro objUsuarios = new cls_registro();
+            objUsuarios.fnt_agregar(txt_id.Text, txt_nombre.Text, txt_apellido.Text, txt_contacto.Text, txt_correo.Text,
+                txt_direccion.Text, txt_empresa.Text, txt_salario.Text, txt_monto.Text, cbx_meses.SelectedValue);
+            lbl_mensaje.Text = objUsuarios.getMensaje();
+        }
+
+        protected void btn_cancelar_Click(object sender, EventArgs e)
+        {
+            txt_id.Text = "";
+            txt_nombre.Text = "";
+            txt_apellido.Text = "";
+            txt_contacto.Text = "";
+            txt_correo.Text = "";
+            txt_direccion.Text = "";
+            txt_empresa.Text = "";
+            txt_salario.Text = "";
+            txt_monto.Text = "";
+            cbx_meses.SelectedIndex = 0;
+            this.txt_id.Focus();
+        }
     }
 }

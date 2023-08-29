@@ -105,13 +105,13 @@ namespace App_reto1
         protected global::System.Web.UI.WebControls.TextBox txt_monto;
 
         /// <summary>
-        /// Control meses.
+        /// Control cbx_meses.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList meses;
+        protected global::System.Web.UI.WebControls.DropDownList cbx_meses;
 
         /// <summary>
         /// Control btn_registrar.
@@ -123,15 +123,6 @@ namespace App_reto1
         protected global::System.Web.UI.WebControls.Button btn_registrar;
 
         /// <summary>
-        /// Control btn_consultar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_consultar;
-
-        /// <summary>
         /// Control btn_cancelar.
         /// </summary>
         /// <remarks>
@@ -139,6 +130,15 @@ namespace App_reto1
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btn_cancelar;
+
+        /// <summary>
+        /// Control hyperlink1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink hyperlink1;
 
         /// <summary>
         /// Control lbl_mensaje.

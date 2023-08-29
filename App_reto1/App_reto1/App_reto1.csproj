@@ -68,10 +68,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="estilos.css" />
+    <Content Include="frm_consultar.aspx" />
     <Content Include="frm_registro.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cls_conexion.cs" />
+    <Compile Include="cls_registro.cs" />
+    <Compile Include="frm_consultar.aspx.cs">
+      <DependentUpon>frm_consultar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frm_consultar.aspx.designer.cs">
+      <DependentUpon>frm_consultar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="frm_registro.aspx.cs">
       <DependentUpon>frm_registro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

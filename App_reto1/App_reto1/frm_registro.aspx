@@ -18,26 +18,25 @@
             <center>
                 <h3>Formulario de registro de usuarios</h3>
                 <br />
-                <asp:TextBox type="text" class="tb form-control" ID="txt_id" runat="server" placeholder="Identificación" required="True"></asp:TextBox>
-                <asp:TextBox type="number" class="tb form-control" ID="txt_nombre" runat="server" placeholder="Nombre"></asp:TextBox>
-                <asp:TextBox type="email" class="tb form-control" ID="txt_apellido" runat="server" placeholder="Apellido"></asp:TextBox>
-                <asp:TextBox type="text" class="tb form-control" ID="txt_contacto" runat="server" placeholder="Contacto"></asp:TextBox>
-                <asp:TextBox type="text" class="tb form-control" ID="txt_correo" runat="server" placeholder="Correo"></asp:TextBox>
+                <asp:TextBox type="number" class="tb form-control" ID="txt_id" runat="server" placeholder="Identificación" required="True"></asp:TextBox>
+                <asp:TextBox type="text" class="tb form-control" ID="txt_nombre" runat="server" placeholder="Nombre"></asp:TextBox>
+                <asp:TextBox type="text" class="tb form-control" ID="txt_apellido" runat="server" placeholder="Apellido"></asp:TextBox>
+                <asp:TextBox type="number" class="tb form-control" ID="txt_contacto" runat="server" placeholder="Contacto"></asp:TextBox>
+                <asp:TextBox type="email" class="tb form-control" ID="txt_correo" runat="server" placeholder="Correo"></asp:TextBox>
                 <asp:TextBox type="text" class="tb form-control" ID="txt_direccion" runat="server" placeholder="Dirección"></asp:TextBox>
                 <asp:TextBox type="text" class="tb form-control" ID="txt_empresa" runat="server" placeholder="Empresa en que labora"></asp:TextBox>
                 <asp:TextBox type="text" class="tb form-control" ID="txt_salario" runat="server" placeholder="Salario"></asp:TextBox>
                 <asp:TextBox type="text" class="tb form-control" ID="txt_monto" runat="server" placeholder="Monto a prestar"></asp:TextBox>
-                <asp:DropDownList class="tb form-control" ID="meses" runat="server">
-                    <asp:ListItem Value="6"> 6 meses </asp:ListItem>
-                    <asp:ListItem Value="12"> 12 meses </asp:ListItem>
-                    <asp:ListItem Value="24"> 24 meses </asp:ListItem>
-                    <asp:ListItem Value="36"> 36 meses </asp:ListItem>
+                <asp:DropDownList class="tb form-control" ID="cbx_meses" runat="server">
+                    <asp:ListItem Value="0"> 6 meses </asp:ListItem>
+                    <asp:ListItem Value="1"> 12 meses </asp:ListItem>
+                    <asp:ListItem Value="2"> 24 meses </asp:ListItem>
+                    <asp:ListItem Value="3"> 36 meses </asp:ListItem>
                 </asp:DropDownList>
-                <asp:Button class="btn btn-outline-success" ID="btn_registrar" runat="server" Text="Registrar"/>
-                <asp:Button class="btn btn-outline-primary" ID="btn_consultar" runat="server" Text="Consultar" />
-                <asp:Button class="btn btn-outline-danger" ID="btn_cancelar" runat="server" Text="Limpiar" />
+                <asp:Button class="btn btn-outline-success" ID="btn_registrar" runat="server" Text="Registrar" OnClick="btn_registrar_Click"/>
+                <asp:Button class="btn btn-outline-danger" ID="btn_cancelar" runat="server" Text="Limpiar" OnClick="btn_cancelar_Click"/>
                 <br />
-                <%--<asp:HyperLink id="hyperlink1" NavigateUrl="frm_productos.aspx" Text="Ir a productos" runat="server"/> --%> 
+                <asp:HyperLink id="hyperlink1" NavigateUrl="frm_consultar.aspx" Text="Ir a consultar" runat="server"/>
                 <br />
                 <asp:Label ID="lbl_mensaje" runat="server" Text=""></asp:Label>
             </center>
